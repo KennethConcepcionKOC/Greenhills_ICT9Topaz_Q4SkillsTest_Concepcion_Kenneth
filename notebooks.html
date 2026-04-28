@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notebook Hub</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #eef2f9;
+      color: #17203b;
+    }
+
+    .app {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    header p {
+      color: #475569;
+      margin: 6px 0 0;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 10px 14px;
+      background: #dbeafe;
+      color: #1e3a8a;
+      border-radius: 999px;
+      font-size: 0.95rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    nav a {
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: #fff;
+      border: 1px solid #dbeafe;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .card h2 {
+      margin: 0.2rem 0 0.6rem;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      margin: 0 0 0.8rem;
+      color: #475569;
+    }
+
+    .card small {
+      color: #64748b;
+    }
+
+    .progress {
+      height: 10px;
+      background: #e2e8f0;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0 0 12px;
+    }
+
+    .progress span {
+      display: block;
+      height: 100%;
+    }
+    <!--progress bar used to show subject colors-->
+
+    .progress.filipino span { background: #A91101; }
+    .progress.english span { background: #ef4444; }
+    .progress.math span { background: #228B22; }
+    .progress.science span { background: #03C03C; }
+    .progress.social span { background: #FF8000; }
+    .progress.values span { background: #003262; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1 style="font-size:1.8rem;margin:0;">Diamond Academy</h1>
+        <p style="color:#475569;margin:6px 0 0;">Select your subjects.</p>
+      </div>
+      <div style="display:inline-block;padding:10px 14px;background:#dbeafe;color:#1e3a8a;border-radius:999px;font-size:.95rem;">9-Diamond - 2026-2027</div>
+    </header>
+
+    <nav style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px;">
+      <a href="#" style="padding:10px 14px;border-radius:12px;background:#fff;border:1px solid #dbeafe;">Dashboard</a>
+      <a href="#" style="padding:10px 14px;border-radius:12px;background:#fff;border:1px solid #dbeafe;">Notebooks</a>
+      <a href="#" style="padding:10px 14px;border-radius:12px;background:#fff;border:1px solid #dbeafe;">Tasks</a>
+      <a href="#" style="padding:10px 14px;border-radius:12px;background:#fff;border:1px solid #dbeafe;">Profile</a>
+      <a href="#" style="padding:10px 14px;border-radius:12px;background:#fff;border:1px solid #dbeafe;">Logout</a>
+    </nav>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Filipino</h2>
+        <p>9-Diamond - 2026-2027</p>
+        <div class="progress filipino"><span></span></div>
+        <small>Teacher: Ms. Margarita</small>
+      </div>
+
+      <div class="card">
+        <h2>English</h2>
+        <p>9-Diamond - 2026-2027</p>
+        <div class="progress english"><span></span></div>
+        <small>Teacher: Ms. Ravioli</small>
+      </div>
+
+      <div class="card">
+        <h2>Math</h2>
+        <p>9-Diamond - 2026-2027</p>
+        <div class="progress math"><span></span></div>
+        <small>Teacher: Mr. Bryson Djuan Tiller</small>
+      </div>
+
+      <div class="card">
+        <h2>Science</h2>
+        <p>9-Diamond - 2026-2027</p>
+        <div class="progress science"><span></span></div>
+        <small>Teacher: Ms. Zabala</small>
+      </div>
+
+      <div class="card">
+        <h2>Social Studies</h2>
+        <p>9-Diamond - 2026-2027</p>
+        <div class="progress social"><span></span></div>
+        <small>Teacher: Mr. LeBron Raymone James</small>
+      </div>
+
+      <div class="card">
+        <h2>Values Education</h2>
+        <p>9-Diamond - 2026-2027</p>
+        <div class="progress values"><span></span></div>
+        <small>Teacher: Mr. Kendrick Lamar Duckworth</small>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
